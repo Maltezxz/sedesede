@@ -7,6 +7,7 @@ const apiKey = process.env.EXPO_PUBLIC_OPENAI_API_KEY;
 
 const openai = apiKey ? new OpenAI({
   apiKey: apiKey,
+  dangerouslyAllowBrowser: true,
 }) : null;
 
 export async function analyzeFood(imageUri: string): Promise<AnalysisResult> {

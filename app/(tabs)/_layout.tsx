@@ -27,7 +27,7 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarIcon: ({ size, color }) => (
-            <Home size={size} color={color} strokeWidth={1.5} />
+            <Icon iconNode={chrome} size={size} color={color} strokeWidth={1.5} />
           ),
         }}
       />
